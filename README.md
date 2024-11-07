@@ -35,7 +35,7 @@ These functions allow you to execute specific actions based on your requirements
 ### Default method
 Installing J.W.M. is straightforward. Simply add the following line in the `<head>` section of your page, before any other JavaScript files:
 ```html
-<script src="https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-0-0.js?min=1"></script>
+<script src="https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-0-0.js"></script>
 ```
 That's all you need to do!
 

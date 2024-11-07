@@ -131,7 +131,7 @@ jwm_w jwm_w_resize {
     width: 14px;
     height: 14px;
 
-    background-image: url("https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/resize.svg?min=1");
+    background-image: url("https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/resize.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -157,32 +157,32 @@ jwm_w_head_control button:disabled {
 }
 
 jwm_w_head_control button[aria-label="Minimize"] {
-    background-image: url("https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/minimize.svg?min=1");
+    background-image: url("https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/minimize.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: bottom;
 }
 jwm_w_head_control button[aria-label="Maximize"] {
-    background-image: url("https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/maximize.svg?min=1");
+    background-image: url("https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/maximize.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
 }
 jwm_w_head_control button[aria-label="Restore"] {
-    background-image: url("https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/restore.svg?min=1");
+    background-image: url("https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/restore.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
 }
 jwm_w_head_control button[aria-label="Help"] {
-    background-image: url("https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/help.svg?min=1");
+    background-image: url("https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/help.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
 }
 jwm_w_head_control button[aria-label="Close"] {
     margin-left: 2px;
-    background-image: url("https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/close.svg?min=1");
+    background-image: url("https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/assets/icons/close.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
