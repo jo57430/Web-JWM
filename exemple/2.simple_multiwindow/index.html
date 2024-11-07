@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[JWM]Demo - Multi Window</title>
+        <!-- 
+            This style is only used to enhance the appearance of this example page. 
+            It is not necessary for the operation of the script. 
+        -->
+        <link href="https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/exemple/style.css" rel="stylesheet" />
+        
+        <!-- 
+            This is where the script is included.
+        -->
+        <script src="https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-0-0.js"></script>  
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Demo N*2 - Multiple windows</h1>
+            <p>Welcome to the demo page for <strong>Jo Windows Manager</strong> script.</p>
+            <p>On this page you be able to create window using the button below with out limit, then be able to move, reduce, enlarge or close it.</p>
+            <p>With a bit of luck you might even be able to find the rainbow window.</p>
+            <a href="#" class="btn" onclick="onButtonPress()">Open a window !</a>
+        </div>
+        <footer class="footer">
+            &copy; 2024 Jo Windows Manager by Jonathan BAUER - All rights reserved.
+        </footer>
+    </body>
+
+    <!-- 
+        This is where the WindowManager is created and manage what the button do. 
+        For simplicity's sake, and because 'JWM_WindowManager' needs a valid DOM 'body' to function, the script is footer-based.
+        We recommend using the 'DOMContentLoaded' event to create 'JWM_WindowManager' properly.
+    -->
+    <script>
+        // First create an instance of the window manager, which will manage all windows created later.
+        const wm_WindowManager = JWM.newManager(null, {mousePassthrough:true}); // new JWM_WindowManager() can be used is the same.
+        let arr_Window = [];
+
+        // This function is called when the button is pressed.
+        // I'm using onclick instead of an DOM event for simplification and demonstration purposes.
+        function onButtonPress(){
+            // Create the window.
+            let temp_Window = wm_WindowManager.newWindow();
+            let str_rainbow = "";
+
+            if(Math.random() >= 0.97)
+                str_rainbow = " rainbow";
+
+            // Open the window with the request content
+            temp_Window.open("My new window", `
+            <div class="container${str_rainbow}">
+                <h1>Tada !</h1>
+                <p>This is the window that whas created by the button !</p>
+            </div>
+            `);
+
+            // Override the onClose() function of the window to remove of the array when close
+            temp_Window.onClose = () => {
+                
+                for (let int_index = 0; int_index < arr_Window.length; int_index++) 
+                    if(arr_Window[int_index] == temp_Window)
+                        return arr_Window.splice(int_index, 1);
+
+            };
+
+            // save the window in the array.
+            arr_Window.push(temp_Window);
+        };
+    </script>
+</html>
