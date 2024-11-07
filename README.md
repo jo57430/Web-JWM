@@ -32,11 +32,26 @@ To use this functionality, simply include a `<script>` element with the file's `
 These functions allow you to execute specific actions based on your requirements. The `JWM_JS_UNLOAD` function, in particular, is important to define, as it is used to clean up or delete the JS element when it is no longer needed.
 
 ## How to Install It
+### Default method
 Installing J.W.M. is straightforward. Simply add the following line in the `<head>` section of your page, before any other JavaScript files:
 ```html
 <script src="https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-0-0.js?min=1"></script>
 ```
 That's all you need to do!
+
+### Advanced (Local)
+You can also download the latest release [HERE](https://github.com/jo57430/Web-JWM/releases/latest/) and store it locally on your web server.</br>
+Depending on your website and how it's structured, you may need to modify the local link to the CSS file.
+
+To do this, simply modify the very beginning of the `jwm_X-X-X.js` file to modify it permanently.
+```js
+                                         \/
+let JWM_VERSION="1.0.0",JWM_ASSETS={css:"URL to the CSS"},J ...
+```
+Or call this function before creating your first WindowManager/Window object.
+```js
+JWM.setMainCSS("URL to the CSS")
+```
 
 ## Example 
 ### Simple Window Example
