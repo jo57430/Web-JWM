@@ -1,0 +1,164 @@
+jwm_wm {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+jwm_w {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+
+    position: absolute;
+    z-index: 11;
+    top: 200px;
+    left: 200px;
+    width: 400px;
+    height: 300px;
+
+    border: 2px outset #ababab;
+    border-collapse: collapse;
+    background-color:lightgrey;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: stretch;
+    align-content: normal;
+
+    pointer-events: auto;
+}
+jwm_w jwm_w_head {
+    min-height: 24px;
+
+    color: white;
+    background: #000080;
+    background: -moz-linear-gradient(left, #000080 0%, #1084d0 100%);
+    background: -webkit-linear-gradient(left, #000080 0%,#1084d0 100%);
+    background: linear-gradient(to right, #000080 0%,#1084d0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#1084d0',GradientType=1 );
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1px 2px 1px 3px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+jwm_w jwm_w_head.disabled {
+    background: #808080;
+    background: -moz-linear-gradient(left, #808080 0%, #b5b5b5 100%);
+    background: -webkit-linear-gradient(left, #808080 0%,#b5b5b5 100%);
+    background: linear-gradient(to right, #808080 0%,#b5b5b5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#b5b5b5',GradientType=1 );
+}
+jwm_w jwm_w_head img {
+    max-height: 22px;
+    height: 22px;
+    margin-top: 1px;
+    margin-right: 4px;
+}
+jwm_w jwm_w_head jwm_w_head_title {
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-right: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    flex-grow: 1;
+    touch-action: none;
+}
+jwm_w jwm_w_head jwm_w_head_control {
+    display: flex;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+jwm_w jwm_w_body {
+    display: block;
+
+    margin: 5px;
+    border: 2px groove #EEE;
+    text-align: left;
+    padding: 5px;
+    background-color: whitesmoke;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+jwm_w jwm_w_resize {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("./../assets/icons/resize.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    cursor: all-scroll;
+}
+
+jwm_w_head_control button {
+    padding: 0;
+    display: block;
+    width: 22px;
+}
+jwm_w_head_control button:active {
+    padding: 0;
+}
+jwm_w_head_control button:focus {
+    outline: none;
+}
+jwm_w_head_control button:disabled {
+    background-color: #acacac;
+    text-shadow: 1px 1px 0 #fff;
+    color: grey;
+}
+
+jwm_w_head_control button[aria-label="Minimize"] {
+    background-image: url("./../assets/icons/minimize.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: bottom;
+}
+jwm_w_head_control button[aria-label="Maximize"] {
+    background-image: url("./../assets/icons/maximize.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+jwm_w_head_control button[aria-label="Restore"] {
+    background-image: url("./../assets/icons/restore.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+jwm_w_head_control button[aria-label="Help"] {
+    background-image: url("./../assets/icons/help.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+jwm_w_head_control button[aria-label="Close"] {
+    margin-left: 2px;
+    background-image: url("./../assets/icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
