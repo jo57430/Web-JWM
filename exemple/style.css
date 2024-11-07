@@ -1,0 +1,65 @@
+/* !
+ * |==================================|
+ * |        Jo Windows Manager        |
+ * |==================================|
+ * |
+ * |     Ver : 1.0.0
+ * |    Date : 02/11/2024
+ * |      By : Jonathan BAUER (jbauer.fr)
+ * | Copyright 2024-2025 The JWM Author (Jonathan BAUER)
+ * | License : Apache 2.0 ()
+ * |
+ * |==================================
+ * This is the CSS file used for the exemple html.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    color: #3498db;
+    font-size: 2em;
+}
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #2980b9;
+}
+.footer {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 20px;
+}

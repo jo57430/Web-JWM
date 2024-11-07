@@ -1,3 +1,19 @@
+/* !
+ * |==================================|
+ * |        Jo Windows Manager        |
+ * |==================================|
+ * |
+ * |     Ver : 1.0.0
+ * |    Date : 02/11/2024
+ * |      By : Jonathan BAUER (jbauer.fr)
+ * | Copyright 2024-2025 The JWM Author (Jonathan BAUER)
+ * | License : Apache 2.0 ()
+ * |
+ * |==================================
+ * This is the default CSS file used by the windowManager and window.
+*/
+
+/* jwm_wm : This DOM Element is used to contain all window created by a instance of the WindowManager class */
 jwm_wm {
     display: none;
     position: fixed;
@@ -10,6 +26,7 @@ jwm_wm {
     -webkit-backdrop-filter: blur(4px);
 }
 
+/* jwm_w : This DOM Element is the window body link the a instance of the Window class */
 jwm_w {
     font-family: 'Open Sans', sans-serif;
     color: black;
@@ -34,6 +51,7 @@ jwm_w {
 
     pointer-events: auto;
 }
+/* jwm_w_head : This DOM Element is the panel on top of the window used has a frame for the icon, title and button element of the window */
 jwm_w jwm_w_head {
     min-height: 24px;
 
@@ -64,12 +82,14 @@ jwm_w jwm_w_head.disabled {
     background: linear-gradient(to right, #808080 0%,#b5b5b5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#b5b5b5',GradientType=1 );
 }
+/* jwm_w_head img : This DOM Element is where the icon of the window is set (left-side of the jwm_w_head)*/
 jwm_w jwm_w_head img {
     max-height: 22px;
     height: 22px;
     margin-top: 1px;
     margin-right: 4px;
 }
+/* jwm_w_head jwm_w_head_title : This DOM Element is where the title of the window is set (center-side of the jwm_w_head)*/
 jwm_w jwm_w_head jwm_w_head_title {
     font-weight: bold;
     letter-spacing: 0;
@@ -80,11 +100,13 @@ jwm_w jwm_w_head jwm_w_head_title {
     flex-grow: 1;
     touch-action: none;
 }
+/* jwm_w_head jwm_w_head_control : This DOM Element is where all the button is set (right-side of the jwm_w_head)*/
 jwm_w jwm_w_head jwm_w_head_control {
     display: flex;
     padding-top: 3px;
     padding-bottom: 3px;
 }
+/* jwm_w_body : This DOM Element is the panel where the user defind html/body data is inserted inside */
 jwm_w jwm_w_body {
     display: block;
 
@@ -98,6 +120,8 @@ jwm_w jwm_w_body {
     overflow-y: scroll;
     flex-grow: 1;
 }
+
+/* jwm_w_resize : This DOM Element is used for the resize button */
 jwm_w jwm_w_resize {
     display: block;
     position: absolute;
@@ -114,6 +138,7 @@ jwm_w jwm_w_resize {
     cursor: all-scroll;
 }
 
+/* jwm_w_head_control button : This DOM Element is the button on the top of the window inside the jwm_w_head */
 jwm_w_head_control button {
     padding: 0;
     display: block;

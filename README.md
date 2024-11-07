@@ -5,7 +5,7 @@
 Designed to be robust, lightweight and modular, this script can be easily installed and integrated into your website, and offers a wide range of configuration options that can be easily customized to suit your needs.
 
 > **By Jonathan BAUER (J-BAUER)**</br>
-> Version: 1.0</br>
+> Version: 1.0.0</br>
 > Date: 02/11/2024</br>
 > License: Apache 2.0
 
@@ -75,7 +75,7 @@ myWindow.open("My Window Title", "<p>Welcome to my window content!</p>");
 Below is an example of how to create and use a window with `JWM_WindowManager` and one hot-loaded JavaScript file:
 ```javascript (main.js)
 // Step 1: Create an instance of JWM_WindowManager
-const windowManager = new JWM_WindowManager()
+const windowManager = JWM.newManager()
 
 // Step 2: Create a new window
 const myWindow = windowManager.newWindow(null, {
