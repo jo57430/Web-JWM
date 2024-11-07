@@ -25,6 +25,10 @@ jwm_wm {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
+jwm_wm .passthrough {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
 
 /* jwm_w : This DOM Element is the window body link the a instance of the Window class */
 jwm_w {
