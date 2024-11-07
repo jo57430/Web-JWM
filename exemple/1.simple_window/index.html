@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[JWM]Demo - Simple Window</title>
+        <!-- 
+            This style is only used to enhance the appearance of this example page. 
+            It is not necessary for the operation of the script. 
+        -->
+        <link href="https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/exemple/style.css" rel="stylesheet" />
+        
+        <!-- 
+            This is where the script is included.
+        -->
+        <script src="https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-0-0.js?min=1"></script>  
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Demo N*1 - A Simple Window</h1>
+            <p>Welcome to the demo page for <strong>Jo Windows Manager</strong> script.</p>
+            <p>On this page you be able to create a simple window using the button below, then be able to move, reduce, enlarge or close it.</p>
+            <a href="#" class="btn" onclick="onButtonPress()">Open a window !</a>
+        </div>
+        <footer class="footer">
+            &copy; 2024 Jo Windows Manager by Jonathan BAUER - All rights reserved.
+        </footer>
+    </body>
+
+    <!-- 
+        This is where the WindowManager is created and manage what the button do. 
+        For simplicity's sake, and because 'JWM_WindowManager' needs a valid DOM 'body' to function, the script is footer-based.
+        We recommend using the 'DOMContentLoaded' event to create 'JWM_WindowManager' properly.
+    -->
+    <script>
+        // First create an instance of the window manager, which will manage all windows created later.
+        const wm_WindowManager = JWM.newManager(null, null); // new JWM_WindowManager() can be used is the same.
+        let w_Window;
+
+        // This function is called when the button is pressed.
+        // I'm using onclick instead of an DOM event for simplification and demonstration purposes.
+        function onButtonPress(){
+            // check if a window already exist and if is valid(aka not removed/deconstructed), if yes stop here is not needed to create more than one window for this demo.
+            if( w_Window && w_Window.isValid())
+                return;
+
+            // Create the window.
+            w_Window = wm_WindowManager.newWindow()
+            
+            // Open the window with the request content
+            w_Window.open("My new window", `
+            <div class="container">
+                <h1>Tada !</h1>
+                <p>This is the window that whas created by the button !</p>
+            </div>
+            `)
+
+        };
+    </script>
+</html>
