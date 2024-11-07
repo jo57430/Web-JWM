@@ -34,7 +34,7 @@ These functions allow you to execute specific actions based on your requirements
 ## How to Install It
 Installing J.W.M. is straightforward. Simply add the following line in the `<head>` section of your page, before any other JavaScript files:
 ```html
-<script src="jwm_1-0-0.js"></script>
+<script src="https://rawcdn.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-0-0.js?min=1"></script>
 ```
 That's all you need to do!
 
@@ -83,16 +83,16 @@ function JWM_JS_UNLOAD() {
   // Unload variable, object, table, etc...
 }
 
-function JWM_JS_OPEN(...args) {
-  console.log("A new window using this file has been opened with arguments:", args);
+function JWM_JS_OPEN(obj_window, ...args) {
+  console.log(`A new window (${obj_window.toString()}) using this file has been opened with arguments:`, args);
 }
 
-function JWM_JS_UPDATE(...args) {
-  console.log("A window using this file has been updated with arguments:", args);
+function JWM_JS_UPDATE(obj_window, ...args) {
+  console.log(`A window (${obj_window.toString()}) using this file has been updated with arguments:`, args);
 }
 
-function JWM_JS_CLOSE(...args) {
-  console.log("A window using this file has been closed with arguments:", args);
+function JWM_JS_CLOSE(obj_window, ...args) {
+  console.log(`A window (${obj_window.toString()}) using this file has been closed with arguments:`, args);
 }
 ```
-With this setup, the system will handle loading and unloading the script automatically as the window is opened or closed and the script is no longer used.
+With this setup, the system will handle loading and unloading the script automatically as the window is opened or closed and the js file is no longer used.
