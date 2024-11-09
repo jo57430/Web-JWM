@@ -39,8 +39,8 @@ Function called when the restore button of the window is clicked. This is an ove
 ### onIcon()
 Function called when the icon of the window is clicked, if the option is enabled. This is an override function.
 
-## List of class Functions of `JWM_Window`
 
+## List of class Functions of `JWM_Window`
 
 ### constructor()
 Create a new window.
