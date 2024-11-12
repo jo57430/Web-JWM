@@ -3,9 +3,16 @@
 # [J-BAUER][EN] Jo Windows Manager
 
 > **By Jonathan BAUER (J-BAUER)**</br>
-> Version: 1.0</br>
-> Date: 06/11/2024
+> Version: 1.1.0</br>
+> Date: 12/11/2024
 
+## List of Available Global Options
+These options are available for both `JWM_WindowManager` and `JWM_Window`.
+
+### forPc
+An `object {}` used to apply specified options inside only when the window is opened in a desktop browser.
+### forMobile
+An `object {}` used to apply specified options inside only when the window is opened in a mobile browser.
 
 ## List of the available option of `JWM_WindowManager`
 When you create a new instance of `JWM_WindowManager` it is possible to pass options in its constucteur to change its behavior.

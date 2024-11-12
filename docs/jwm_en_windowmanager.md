@@ -3,8 +3,8 @@
 # [J-BAUER][EN] Jo Windows Manager
 
 > **By Jonathan BAUER (J-BAUER)**</br>
-> Version: 1.0</br>
-> Date: 06/11/2024
+> Version: 1.1.0</br>
+> Date: 12/11/2024
 
 
 ## List of class Functions of `JWM_WindowManager`

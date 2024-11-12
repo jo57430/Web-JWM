@@ -3,8 +3,8 @@
 # [J-BAUER][EN] Jo Windows Manager
 
 > **By Jonathan BAUER (J-BAUER)**</br>
-> Version: 1.0</br>
-> Date: 06/11/2024
+> Version: 1.1.0</br>
+> Date: 12/11/2024
 
 ## Information about `JWM_Window` class.
 The `JWM_Window` must be a child of `JWM_WindowManager`, otherwise it won't work!

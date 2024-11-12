@@ -3,7 +3,7 @@
  * |        Jo Windows Manager        |
  * |==================================|
  * |
- * |     Ver : 1.0.0
+ * |     Ver : 1.1.0
  * |    Date : 02/11/2024
  * |      By : Jonathan BAUER (jbauer.fr)
  * | Copyright 2024-2025 The JWM Author (Jonathan BAUER)

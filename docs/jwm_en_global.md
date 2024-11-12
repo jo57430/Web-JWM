@@ -3,8 +3,8 @@
 # [J-BAUER][EN] Jo Windows Manager
 
 > **By Jonathan BAUER (J-BAUER)**</br>
-> Version: 1.0</br>
-> Date: 06/11/2024
+> Version: 1.1.0</br>
+> Date: 12/11/2024
 
 
 ## List of all Global Functions
@@ -166,3 +166,45 @@ Changes the path to the custom CSS used for the window.
 Gets the path to the custom CSS.
 
 - **Returns**: `string|boolean` – Returns the URL to the CSS or `false` if the stored URL is invalid.
+
+### JWM.isMobileDevice()
+Used to check if the current device is a mobile device.
+
+- **Returns**: `{boolean}` – Returns `true` if the device is a mobile device, otherwise `false`.
+
+## GLOBAL MultiLang
+
+### JWM.getLang()
+Used to retrieve the current language of the page or browser.
+
+- **Returns**: `{string}` – Returns a two-letter language code.
+
+### JWM.forceLang()
+Used to force a specific language to be used.
+
+- **Parameters**:
+  - `str_lang {string}`: The two-letter language code to force.
+
+### JWM.getText()
+Used to retrieve the specified text for the current user language.
+
+- **Parameters**:
+  - `str_identifier {string}`: The text identifier.
+  - `...args {string}` [optional]: Optional arguments to replace placeholders in the text (e.g., `&0` is replaced by the first argument).
+
+- **Returns**: `{string}` – Returns the requested text.
+
+### JWM.setLangText()
+Used to set a specific text for a particular language.
+
+- **Parameters**:
+  - `str_lang {string}`: The two-letter language code.
+  - `str_identifier {string}`: The text identifier.
+  - `str_text {string}`: The text to display when requested.
+
+### JWM.setLangBatchText()
+Used to set multiple texts for a specific language in batch.
+
+- **Parameters**:
+  - `str_lang {string}`: The two-letter language code.
+  - `obj_idtext {object}`: An object containing key-value pairs where each key is a text identifier, and each value is the corresponding text.

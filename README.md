@@ -5,8 +5,8 @@
 Designed to be robust, lightweight and modular, this script can be easily installed and integrated into your website, and offers a wide range of configuration options that can be easily customized to suit your needs.
 
 > **By Jonathan BAUER (J-BAUER)**</br>
-> Version: 1.0.0</br>
-> Date: 02/11/2024</br>
+> Version: 1.1.0</br>
+> Date: 12/11/2024</br>
 > License: Apache 2.0
 
 ## Demo
@@ -35,7 +35,7 @@ These functions allow you to execute specific actions based on your requirements
 ### Default method
 Installing J.W.M. is straightforward. Simply add the following line in the `<head>` section of your page, before any other JavaScript files:
 ```html
-<script src="https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-0-0.js"></script>
+<script src="https://raw.githack.com/jo57430/Web-JWM/refs/heads/master/lib/jwm_1-1-0.js"></script>
 ```
 That's all you need to do!
 
@@ -46,7 +46,7 @@ Depending on your website and how it's structured, you may need to modify the lo
 To do this, simply modify the very beginning of the `jwm_X-X-X.js` file to modify it permanently.
 ```js
                                          \/
-let JWM_VERSION="1.0.0",JWM_ASSETS={css:"URL to the CSS"},J ...
+let JWM_VERSION="1.1.0",JWM_ASSETS={css:"URL to the CSS"},J ...
 ```
 Or call this function before creating your first WindowManager/Window object.
 ```js
